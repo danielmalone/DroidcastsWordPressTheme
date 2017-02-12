@@ -16,8 +16,8 @@
         #header {
             text-align: center;
             color: #ffffff;
-            margin: 0;
-            background-color: #00a0d2;
+            margin: 0 0 32px 0;
+            background-color: #6AB344;
         }
 
         #header h1 {
@@ -33,6 +33,31 @@
             text-decoration: none;
             color: #ffffff;
         }
+
+        #content {
+            margin: 0 auto;
+            text-align: center;
+            max-width: 1200px;
+        }
+
+        .box {
+            float: left;
+            width: 300px;
+            text-align: left;
+            -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 1);
+            box-shadow: 0 0 3px 0 rgba(0, 0, 0, 1);
+        }
+
+        .box h3 {
+            background-color: #6AB344;
+            padding: 12px;
+            color: #ffffff;
+            margin: 0;
+        }
+
+        .box-content {
+            padding: 12px;
+        }
     </style>
 </head>
 <body>
@@ -44,17 +69,23 @@
 	?>
 </header><!-- #header -->
 
-<main>
+<main id="content">
 	<?php
 	if ( have_posts() ) {
 		while ( have_posts() ) :
+			echo '<div class="box">';
+			echo '<h3>';
+			the_title();
+			echo '</h3>';
 			the_post();
+			echo '<div class="box-content">';
 			the_content();
-			echo 'post 1<br>';
+			echo '</div><!-- .box-content -->';
+			echo '</div><!-- .box -->';
 		endwhile;
 	}
 	?>
-</main>
+</main><!-- #content -->
 
 </body>
 </html>
