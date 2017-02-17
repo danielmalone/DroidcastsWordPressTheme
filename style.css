@@ -2,3 +2,90 @@
 Theme Name: Daniel Custom
  */
 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+#header {
+    text-align: center;
+    color: #ffffff;
+    margin: 0 0 32px 0;
+    background-color: #6AB344;
+}
+
+#header h1 {
+    margin: 0;
+    padding: 12px;
+}
+
+#header ul {
+    list-style-type: none;
+}
+
+#header a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#nav {
+    float: left;
+}
+
+#nav .material-icons {
+    font-size: 50px;
+}
+
+#content {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.box {
+    float: left;
+    flex-grow: 1;
+    flex-basis: 25%;
+    text-align: left;
+    -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 1);
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 1);
+    margin: 12px 12px 48px 12px;
+}
+
+.box h3 {
+    background-color: #6AB344;
+    color: #ffffff;
+    margin: 0;
+}
+
+.box h3 a {
+    color: #ffffff;
+    padding: 12px;
+    text-decoration: none;
+    font-weight: 700;
+    display: block;
+}
+
+.box-content {
+    padding: 12px;
+}
+
+.box-date {
+    margin: 0;
+    font-size: 11px;
+}
+
+.box-icon {
+    float: left;
+    padding-right: 12px;
+}
+
+.material-icons {
+    color: #ffffff;
+    font-size: 32px;
+}
